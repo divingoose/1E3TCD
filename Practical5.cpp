@@ -46,8 +46,10 @@ int main () {
 			
 				for (i=1; i<=range_i; i=i+step_i)
 					{
-					cout << setw(10) << (invest_return = pow( (initial_investment * (1+j/100)), i));
+					invest_return = pow(initial_investment * ((1+j)/100), i);
+					cout << setw(10) << invest_return;
 					}
+					
 				cout << "\n";
 				}
 			}
