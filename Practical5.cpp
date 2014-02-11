@@ -9,22 +9,23 @@ using namespace std;
 int main () {
 	
 	double initial_investment, i, j, range_i, range_j, step_i, step_j, invest_return;
-	cout << setprecision(2);
-	
+	cout << fixed << setprecision(2);
+
 	cout << "Enter initial investment: ";
 	cin >> initial_investment;
 	
-	cout << "\nEnter the rate range: ";
+	cout << "\nEnter the maximum % the rate will reach: "; //range
 	cin >> range_j;
 	
-	cout << "\nEnter desired rate intervals: ";
+	cout << "\nEnter desired interval for rate %: ";
 	cin >> step_j;
 
-	cout << "\nEnter the  year range: ";
+	cout << "\nEnter the  number of years for this investment: "; //range
 	cin >> range_i;
 
-	cout << "\nEnter the desired year intervals: ";
+	cout << "\nEnter the desired interval for years: ";
 	cin >> step_i;
+
 
 	//*********************************//
 	
