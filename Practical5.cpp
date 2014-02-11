@@ -14,16 +14,16 @@ int main () {
 	cout << "Enter initial investment: ";
 	cin >> initial_investment;
 	
-	cout << "\n Enter the rate range: ";
+	cout << "\nEnter the rate range: ";
 	cin >> range_j;
 	
-	cout << "\n Enter desired rate intervals: ";
+	cout << "\nEnter desired rate intervals: ";
 	cin >> step_j;
 
-	cout << "\n Enter the  year range: ";
+	cout << "\nEnter the  year range: ";
 	cin >> range_i;
 
-	cout << "\n Enter the desired year intervals: ";
+	cout << "\nEnter the desired year intervals: ";
 	cin >> step_i;
 
 	//*********************************//
