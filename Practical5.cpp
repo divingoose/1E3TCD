@@ -35,10 +35,6 @@ int main () {
 			cout << setw(10) << i << "years";
 		}
 	cout << "\n";
-	
-	//print a line of --------------//
-	for (i=1; i<=58; i++) cout << "-";
-	cout << "\n";
 		
 		
 	//the sumz!//
