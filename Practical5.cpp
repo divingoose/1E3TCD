@@ -38,16 +38,18 @@ int main () {
 		
 		
 	//the sumz!//
-	for (j=1; j<=range_j; j=j+step_j)
-		{
-			cout << setw(10) << j << " | "; // This is the left hand column
+	for (j=0; j<=range_j; j=j+step_j)
+		if (j!=0){
+			{
+				cout << setw(10) << j << " | "; // This is the left hand column
 			
-			for (i=1; i<=range_i; i=i+step_i)
-				{
+				for (i=1; i<=range_i; i=i+step_i)
+					{
 					cout << setw(10) << (invest_return = pow( (initial_investment * (1+j/100)), i));
+					}
+				cout << "\n";
 				}
-			cout << "\n";
-		}		
+			}
 	
 	
 	
