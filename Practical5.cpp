@@ -9,7 +9,7 @@ using namespace std;
 int main () {
 	
 	double initial_investment, i, j, range_i, range_j, step_i, step_j, invest_return;
-	std::cout << std::setprecision(2) << fixed << '\n';
+	cout << setprecision(4);
 	
 	cout << "Enter initial investment: ";
 	cin >> initial_investment;
