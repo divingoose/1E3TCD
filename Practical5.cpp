@@ -8,7 +8,8 @@ using namespace std;
 
 int main () {
 	
-	double initial_investment, i, j, range_i, range_j, step_i, step_j;
+	double initial_investment, i, j, range_i, range_j, step_i, step_j, invest_return;
+	std::cout << std::setprecision(2) << fixed << '\n';
 	
 	cout << "Enter initial investment: ";
 	cin >> initial_investment;
@@ -29,9 +30,9 @@ int main () {
 	
 	//print table header//
 	cout << "Rate ";
-	for (i=0; i<=range_i; i=i+step_i)
-		{
-			cout << setw(5) << i << "years";
+	for (i=1; i<=range_i; i=i+step_i)
+		{	
+			cout << setw(10) << i << "years";
 		}
 	cout << "\n";
 	
@@ -39,7 +40,18 @@ int main () {
 	for (i=1; i<=58; i++) cout << "-";
 	cout << "\n";
 		
-	
+		
+	//the sumz!//
+	for (j=1; j<=range_j; j=j+step_j)
+		{
+			cout << setw(10) << j << " | "; // This is the left hand column
+			
+			for (i=1; i<=range_i; i=i+step_i)
+				{
+					cout << setw(10) << (invest_return = pow( (initial_investment * (1+j/100)), i));
+				}
+			cout << "\n";
+		}		
 	
 	
 	
